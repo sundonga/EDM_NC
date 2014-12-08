@@ -1,0 +1,6 @@
+*.txt
+PROGRAM/Debug/
+PROGRAM/_UpgradeReport_Files/
+*.user
+*.APS
+*.old

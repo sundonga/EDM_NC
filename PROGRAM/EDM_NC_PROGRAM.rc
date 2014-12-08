@@ -1,0 +1,190 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EDM_NC_PROGRAM      ICON                    "EDM_NC_PROGRAM.ico"
+IDI_SMALL               ICON                    "small.ico"
+IDI_ICON1               ICON                    "picture\\ICON_TO_LISTVIEW.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_Menu MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "新建",                          IDM_FILE_NEW
+        MENUITEM "打开",                          IDM_FILE_OPEN
+        MENUITEM "保存",                          IDM_FILE_SAVE
+        MENUITEM "复制",                          IDM_FILE_COPY
+        MENUITEM "删除",                          IDM_FILE_DELETE
+        MENUITEM "关闭",                          IDM_FILE_CLOSE
+    END
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "撤销",                          IDM_EDIT_CANCEL
+        MENUITEM "剪切",                          IDM_EDIT_CUT
+        MENUITEM "复制",                          IDM_EDIT_COPY
+        MENUITEM "粘贴",                          IDM_EDIT_PASTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EDM_NC_PROGRAM ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  22, 17, 230, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 9, "System"
+BEGIN
+    ICON            IDI_EDM_NC_PROGRAM,IDC_MYICON,14,9,16,16
+    LTEXT           "EDM_NC_PROGRAM Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "确定",IDOK,195,6,30,11,WS_GROUP
+END
+
+IDD_SCREEN DIALOGEX 0, 0, 512, 350
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CONTROL | WS_POPUP
+FONT 8, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SCREEN_EDIT,0,250,512,100,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "picture\\down.bmp"
+IDB_BITMAP2             BITMAP                  "picture\\down_click.bmp"
+IDB_BITMAP3             BITMAP                  "picture\\left.bmp"
+IDB_BITMAP4             BITMAP                  "picture\\left_click.bmp"
+IDB_BITMAP5             BITMAP                  "picture\\LightOff.bmp"
+IDB_BITMAP6             BITMAP                  "picture\\LightOn.bmp"
+IDB_BITMAP7             BITMAP                  "picture\\right.bmp"
+IDB_BITMAP8             BITMAP                  "picture\\right_click.bmp"
+IDB_BITMAP9             BITMAP                  "picture\\Screen.bmp"
+IDB_BITMAP10            BITMAP                  "picture\\TAP.bmp"
+IDB_BITMAP11            BITMAP                  "picture\\turn_down.bmp"
+IDB_BITMAP12            BITMAP                  "picture\\turn_down_click.bmp"
+IDB_BITMAP13            BITMAP                  "picture\\turn_left.bmp"
+IDB_BITMAP14            BITMAP                  "picture\\turn_left_click.bmp"
+IDB_BITMAP15            BITMAP                  "picture\\turn_right.bmp"
+IDB_BITMAP16            BITMAP                  "picture\\turn_right_click.bmp"
+IDB_BITMAP17            BITMAP                  "picture\\turn_up.bmp"
+IDB_BITMAP18            BITMAP                  "picture\\turn_up_click.bmp"
+IDB_BITMAP19            BITMAP                  "picture\\up.bmp"
+IDB_BITMAP20            BITMAP                  "picture\\up_click.bmp"
+IDB_BITMAP21            BITMAP                  "picture\\zoom_in.bmp"
+IDB_BITMAP22            BITMAP                  "picture\\zoom_in_click.bmp"
+IDB_BITMAP23            BITMAP                  "picture\\zoom_out.bmp"
+IDB_BITMAP24            BITMAP                  "picture\\zoom_out_click.bmp"
+
+IDB_BITMAP25            BITMAP                  "picture\\expertsystem.bmp"
+IDB_BITMAP26            BITMAP                  "picture\\simple.bmp"
+IDB_BITMAP27            BITMAP                  "picture\\complicate.bmp"
+IDB_BITMAP28            BITMAP                  "picture\\nothavebottome.bmp"
+IDB_BITMAP29            BITMAP                  "picture\\angular.bmp"
+IDB_BITMAP30            BITMAP                  "picture\\coor1.bmp"
+IDB_BITMAP31            BITMAP                  "picture\\coor2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "EDM_NC_PROGRAM"
+    IDC_EDM_NC_PROGRAM      "EDM_NC_PROGRAM"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
